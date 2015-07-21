@@ -11,9 +11,9 @@
 
       $('.event').each(function(i,value) {
         if ($(this).children().text().match(filter)) {
-          $(this).show();
+          $(this).parent().show();
         }else {
-          $(this).hide();
+          $(this).parent().hide();
         }
       });
     });
